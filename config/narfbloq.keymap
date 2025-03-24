@@ -4,7 +4,6 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT 0
-#define LOWER   1
 
 / {
     keymap {
@@ -15,15 +14,6 @@
                         &kp A     &kp D     &kp G
                         &kp B     &kp E     &kp H
             &kp C_MUTE  &kp C     &kp F     &kp I
-            >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-        lower_layer {
-            label = "LOWER";
-            bindings = <
-                          &bt BT_PRV      &bt BT_CLR        &bt BT_NXT
-                          &sys_reset      &none             &bootloader
-             &none        &none           &none             &none
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
