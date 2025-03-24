@@ -6,4 +6,10 @@ if SHIELD_NARFBLOQ
 config ZMK_KEYBOARD_NAME
     default "narfbloq"
 
+config ZMK_SLEEP
+    default y
+
+config ZMK_IDLE_SLEEP_TIMEOUT
+    default 900000
+
 endif
