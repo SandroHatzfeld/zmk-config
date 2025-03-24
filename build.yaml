@@ -21,4 +21,6 @@
 include:
   - board: seeeduino_xiao_ble
     shield: narfbloq
-    snippet: zmk-usb-logging
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: narfbloq_with_studio
