@@ -47,8 +47,7 @@
         label = "encoder";
         a-gpios = <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        resolution = <4>;        // Increased from 2 for better control
-        steps = <80>;           // Added for smoother rotation
+        resolution = <2>;
         status = "okay";
     };
 
